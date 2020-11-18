@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button, input[type="text"] {
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.states, .park-num {
+    margin: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+li, img {
+    max-width: 500px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    margin-bottom: 0;
+}
+
+/***** Groups & Items  (Desktop) *****/
+
+/* When a web browser is larger than 600px,
+   apply these rules */
+   /* @media all and (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .breed-img img, .results-img {
+        max-width: 600px;
+        max-height: 700px;
+    } */
+}
