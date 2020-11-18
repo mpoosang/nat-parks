@@ -1,21 +1,31 @@
 * {
     box-sizing: border-box;
 }
-  
+
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 5%;
 }
 
-button, input[type="text"] {
+input {
     padding: 5px;
+}
+
+input[type="submit"] {
+    margin: 5px;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-.states, .park-num {
+.state, .park-num {
     margin: 10px;
+}
+
+h2 {
+    margin-top: 75px;
+    margin-bottom: 0;
 }
 
 ul {
@@ -43,23 +53,4 @@ li, img {
 
 .hidden {
     display: none;
-}
-
-span {
-    margin-bottom: 0;
-}
-
-/***** Groups & Items  (Desktop) *****/
-
-/* When a web browser is larger than 600px,
-   apply these rules */
-   /* @media all and (min-width: 600px) {
-    .container {
-        max-width: 600px;
-    }
-
-    .breed-img img, .results-img {
-        max-width: 600px;
-        max-height: 700px;
-    } */
 }
