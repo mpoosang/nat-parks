@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks Finder</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>National Parks Finder</h1>
+
+        <form id="js-form">
+            <div class="states">
+                <label for="state">Enter State(s): </label>
+                <input type="text" name="state" id="js-state" placeholder="CA,AZ" required>
+            </div>
+            
+            <div class="park-num">
+                <label for="limit-results"># of Parks: </label>
+                <input type="number" name="limit-results" id="js-limit-results" value="10">
+            </div>
+        
+            <input type="submit" value="Show Parks">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
