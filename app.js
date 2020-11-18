@@ -62,13 +62,10 @@ function getParks(state, limit=10) {
 function watchForm() {
     $('form').submit(event => {
       event.preventDefault();
-      const state = $('#js-state').val();
+      const state = $('#js-state').val().toUpperCase();
       const limit = $('#js-limit-results').val();
       getParks(state, limit);
     });
 }
 
 $(watchForm);
-
-
-// As a stretch goal, try adding the park's address to the results
